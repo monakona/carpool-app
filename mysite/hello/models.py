@@ -2,13 +2,17 @@ from django.db import models
 
 # User class for all users with personal info
 class User(models.Model):
+    USER_TYPES = (
+        ('D', 'Driver'),
+        ('S', 'Shopper'),
+    )
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     home_adress = models.CharField(max_length=100)
     email_address = models.CharField(max_length=50)
     user_name = models.CharField(max_length=20)
     phone_number = models.CharField(max_length=15)
-    user_type = models.CharField(max_length=10)
+    user_type = models.CharField(max_length=1, choices=USER_TYPES)
 
     def _str_(self):
         return self.user_name
