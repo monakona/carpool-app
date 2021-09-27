@@ -8,17 +8,14 @@ class User(models.Model):
     email_address = models.CharField(max_length=50)
     user_name = models.CharField(max_length=20)
     phone_number = models.CharField(max_length=15)
+    user_type = models.CharField(max_length=10)
 
     def _str_(self):
         return self.user_name
 
-# Shopper class for users using shopping functions
-class Shopper(models.Model):
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
-
-# Rider class for users using riding functions 
-class Rider(models.Model): 
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    def user_status(self): 
+        "Returns whether the user is a shopper or driver."
+        return self.user_type 
 
 # Store class for grocery store
 class Store(models.Model): 
