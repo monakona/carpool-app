@@ -60,7 +60,7 @@ function Tiles(props) {
                     />
                 </Card>
                 <Typography variant="h5" color="primary.main" gutterBottom align="center" mt={2}>
-                    text
+                    Food Quality
                 </Typography>
             </Grid>
             <Grid item>
@@ -74,7 +74,7 @@ function Tiles(props) {
                     />
                 </Card>
                 <Typography variant="h5" color="primary.main" gutterBottom align="center" mt={2}>
-                    text
+                    Carpool Service
                 </Typography>
             </Grid>
             <Grid item>
@@ -87,7 +87,7 @@ function Tiles(props) {
                     />
                 </Card>
                 <Typography variant="h5" color="primary.main" gutterBottom align="center" mt={2}>
-                    text
+                    Manufacturers
                 </Typography>
             </Grid>
         </Grid>
