@@ -10,7 +10,7 @@ function Footer(props) {
   const { description, title } = props;
 
   return (
-    <Box component="footer" sx={{ bgcolor: '#29201C', py: 6 }}>
+    <Box component="footer" sx={{ bgcolor: '#29201C', py: 6, mt: 5 }}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom color="common.white">
           {title}

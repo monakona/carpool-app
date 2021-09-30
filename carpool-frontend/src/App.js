@@ -19,6 +19,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import List from '@mui/material/List';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import {Link} from "react-router-dom";
 
 
 function App() {
@@ -73,7 +74,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box sx={{
            flexGrow: 1,
-           bgcolor: 'secondary.light'
+           bgcolor: '#faf5e2'
           }}>
           <AppBar position="static" open={open}>
             <Toolbar>
@@ -99,7 +100,11 @@ function App() {
               >
                 <ShoppingCartOutlinedIcon/>
               </IconButton>
-              <Button color="inherit">Login</Button>
+              <Link to="/user" style={{ textDecoration: 'none', color: 'white'}}>
+                <Button color="inherit">
+                  Login
+                </Button>
+              </Link>
               <Button color="inherit">Sign Up</Button>
             </Toolbar>
           </AppBar>

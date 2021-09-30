@@ -1,0 +1,14 @@
+.Item-main-card {
+    width: 250px;
+    height: 320px;
+  }
+  
+  .Item-img {
+    height: auto;
+    min-height: 100px;
+    max-height: 200px;
+    width: auto;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+  }
